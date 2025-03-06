@@ -1,0 +1,632 @@
+
+
+===   [ 收集测试用例 ]  === 
+
+
+== cases\__st__.py 
+
+
+== cases\班级管理.py 
+
+
+== cases\一年级1班无老师\__st__.py 
+
+
+== cases\一年级1班无老师\学生测试.py 
+
+
+== cases\一年级1班无老师\班级测试.py 
+
+
+== cases\一年级1班无老师\老师测试.py 
+
+
+== cases\一年级1班无老师\一个数学老师无学生\__st__.py 
+
+
+== cases\一年级1班无老师\一个数学老师无学生\学生测试.py 
+
+
+== cases\一年级1班无老师\一个数学老师无学生\有学生\__st__.py 
+
+
+== cases\一年级1班无老师\一个数学老师无学生\有学生\学生测试.py 
+
+
+== cases\一年级1班无老师\一个数学老师无学生\有学生\老师测试.py 
+
+
+== cases\一年级1班无老师\一年级2班无老师无学生\__st__.py 
+
+
+== cases\一年级1班无老师\一年级2班无老师无学生\班级修改.py 
+
+
+== cases\一年级1班无老师\一年级2班无老师无学生\两个班级一个数学老师\__st__.py 
+
+
+== cases\一年级1班无老师\一年级2班无老师无学生\两个班级一个数学老师\老师测试2.py 
+
+
+== cases\一年级1班无老师\无老师有学生\__st__.py 
+
+
+== cases\一年级1班无老师\无老师有学生\老师登录.py 
+
+
+
+===   [ 执行测试用例 ]  === 
+
+预备执行用例数量 : 25
+
+
+
+  ========= 测试开始 : 20250305_150958 =========
+
+
+
+>>> cases\
+
+[ suite setup ] cases\
+
+
+>>> cases\班级管理.py
+
+* 添加班级1 - tc000001  -  2025-03-05 15:09:58
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 添加班级 
+
+
+** 检查点 **  添加结果检查 ---->  通过
+
+
+-- 第 2 步 -- 列出班级 
+
+
+** 检查点 **  列出结果检查 ---->  通过
+
+  PASS 
+
+[ case teardown ] 添加班级1 - tc000001
+
+* 删除班级1 - tc000081  -  2025-03-05 15:09:58
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 删除一个班级，使url中的ID为一个不存在的班级ID号 
+
+
+** 检查点 **  添加结果检查 ---->  通过
+
+  PASS 
+
+
+>>> cases\一年级1班无老师\
+
+[ suite setup ] cases\一年级1班无老师\
+
+
+>>> cases\一年级1班无老师\学生测试.py
+
+* 学生登录1 - tc005081  -  2025-03-05 15:09:58
+
+[ case setup ] 学生登录1 - tc005081
+打开网站
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 创建一个学生 
+
+
+-- 第 2 步 -- 以创建学生的账号和密码登录web系统 
+
+登录
+显示页面信息
+
+** 检查点 **  学生信息显示 ---->  通过
+
+
+-- 第 2 步 -- 点击 错题库 菜单 
+
+
+** 检查点 **  错题库显示信息 ---->  通过
+
+  PASS 
+
+[ case teardown ] 学生登录1 - tc005081
+
+
+>>> cases\一年级1班无老师\班级测试.py
+
+* 添加班级2 - tc000002  -  2025-03-05 15:10:04
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 添加系统中不存在同年级的同名班级 
+
+
+** 检查点 **  添加结果检查 ---->  通过
+
+
+-- 第 2 步 -- 列出班级API 
+
+
+** 检查点 **  列出结果检查 ---->  通过
+
+  PASS 
+
+[ case teardown ] 添加班级2 - tc000002
+
+* 添加班级3 - tc000003  -  2025-03-05 15:10:04
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 添加系统中已经存在同年级的同名班级 
+
+
+** 检查点 **  添加结果检查 ---->  通过
+
+
+-- 第 2 步 -- 列出班级API 
+
+
+** 检查点 **  列出结果检查 ---->  通过
+
+  PASS 
+
+* 修改班级3 - tc000053  -  2025-03-05 15:10:04
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 修改一个班级，使url中的ID为一个不存在的班级ID号 
+
+
+** 检查点 **  添加结果检查 ---->  通过
+
+  PASS 
+
+
+>>> cases\一年级1班无老师\老师测试.py
+
+* 添加老师1 - tc001001  -  2025-03-05 15:10:04
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 创建一个老师，教授学科为初中数学 
+
+
+** 检查点 **  添加结果检查 ---->  通过
+
+
+-- 第 2 步 -- 列出老师API 
+
+
+** 检查点 **  列出结果检查 ---->  通过
+
+  PASS 
+
+[ case teardown ] 添加老师1 - tc001001
+
+* 老师登录1 - tc005001  -  2025-03-05 15:10:04
+
+[ case setup ] 老师登录1 - tc005001
+打开网站
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 创建一个老师，教授学科为初中数学（ID为1） 
+
+
+** 检查点 **  添加结果检查 ---->  通过
+
+
+-- 第 2 步 -- 以创建老师的账号和密码登录 web系统 
+
+登录
+显示页面信息
+['白月学院00002', '王二百', '初中数学', '0', '0', '0']
+
+** 检查点 **  检查网页信息 ---->  通过
+
+
+-- 第 3 步 -- 点开学生列表 
+
+  ABORT   Message: element not interactable
+  (Session info: chrome=133.0.6943.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF702A9C6A5+28789]
+	(No symbol) [0x00007FF702A05B20]
+	(No symbol) [0x00007FF702898DCC]
+	(No symbol) [0x00007FF7028F0774]
+	(No symbol) [0x00007FF7028E2314]
+	(No symbol) [0x00007FF70291732A]
+	(No symbol) [0x00007FF7028E1BC6]
+	(No symbol) [0x00007FF702917540]
+	(No symbol) [0x00007FF70293F7E3]
+	(No symbol) [0x00007FF702917103]
+	(No symbol) [0x00007FF7028DFFC0]
+	(No symbol) [0x00007FF7028E1273]
+	GetHandleVerifier [0x00007FF702DE1AED+3458237]
+	GetHandleVerifier [0x00007FF702DF829C+3550316]
+	GetHandleVerifier [0x00007FF702DEDB9D+3507565]
+	GetHandleVerifier [0x00007FF702B62C6A+841274]
+	(No symbol) [0x00007FF702A109EF]
+	(No symbol) [0x00007FF702A0CB34]
+	(No symbol) [0x00007FF702A0CCD6]
+	(No symbol) [0x00007FF7029FC119]
+	BaseThreadInitThunk [0x00007FFDBA5C7374+20]
+	RtlUserThreadStart [0x00007FFDBB63CC91+33]
+ 
+Traceback:
+    ~~~~~~~~~~~~~~^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\cases\一年级1班无老师\老师测试.py", line 63, in teststeps
+    wd.find_element(By.CSS_SELECTOR,'.fa-sitemap+span').click()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\.venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 119, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\.venv\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 572, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=133.0.6943.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF702A9C6A5+28789]
+	(No symbol) [0x00007FF702A05B20]
+	(No symbol) [0x00007FF702898DCC]
+	(No symbol) [0x00007FF7028F0774]
+	(No symbol) [0x00007FF7028E2314]
+	(No symbol) [0x00007FF70291732A]
+	(No symbol) [0x00007FF7028E1BC6]
+	(No symbol) [0x00007FF702917540]
+	(No symbol) [0x00007FF70293F7E3]
+	(No symbol) [0x00007FF702917103]
+	(No symbol) [0x00007FF7028DFFC0]
+	(No symbol) [0x00007FF7028E1273]
+	GetHandleVerifier [0x00007FF702DE1AED+3458237]
+	GetHandleVerifier [0x00007FF702DF829C+3550316]
+	GetHandleVerifier [0x00007FF702DEDB9D+3507565]
+	GetHandleVerifier [0x00007FF702B62C6A+841274]
+	(No symbol) [0x00007FF702A109EF]
+	(No symbol) [0x00007FF702A0CB34]
+	(No symbol) [0x00007FF702A0CCD6]
+	(No symbol) [0x00007FF7029FC119]
+	BaseThreadInitThunk [0x00007FFDBA5C7374+20]
+	RtlUserThreadStart [0x00007FFDBB63CC91+33]
+
+
+
+[ case teardown ] 老师登录1 - tc005001
+
+
+>>> cases\一年级1班无老师\一个数学老师无学生\
+
+[ suite setup ] cases\一年级1班无老师\一个数学老师无学生\
+
+
+>>> cases\一年级1班无老师\一个数学老师无学生\学生测试.py
+
+* 添加学生1 - tc002001  -  2025-03-05 15:10:25
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 创建一个学生，系统中不存在同登录名的学生 
+
+
+** 检查点 **  添加结果检查 ---->  通过
+
+
+-- 第 2 步 -- 列出学生API 
+
+
+** 检查点 **  列出结果检查 ---->  通过
+
+  PASS 
+
+[ case teardown ] 添加学生1 - tc002001
+
+
+>>> cases\一年级1班无老师\一个数学老师无学生\有学生\
+
+[ suite setup ] cases\一年级1班无老师\一个数学老师无学生\有学生\
+
+
+>>> cases\一年级1班无老师\一个数学老师无学生\有学生\学生测试.py
+
+* 添加学生2 - tc002002  -  2025-03-05 15:10:25
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 创建一个学生，系统中不存在同登录名的学生 
+
+
+** 检查点 **  添加结果检查 ---->  通过
+
+
+-- 第 2 步 -- 列出学生API 
+
+
+** 检查点 **  列出结果检查 ---->  通过
+
+  PASS 
+
+[ case teardown ] 添加学生2 - tc002002
+
+* 删除学生1 - tc002081  -  2025-03-05 15:10:25
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 删除一个学生，使url中的ID为一个存在的学生ID号 
+
+
+** 检查点 **  添加结果检查 ---->  通过
+
+
+-- 第 2 步 -- 列出学生API 
+
+
+** 检查点 **  列出结果检查 ---->  通过
+
+  PASS 
+
+[ case teardown ] 删除学生1 - tc002081
+
+
+>>> cases\一年级1班无老师\一个数学老师无学生\有学生\老师测试.py
+
+* 老师发布作业1 - tc005101  -  2025-03-05 15:10:25
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 以数学老师的账号和密码登录 web系统 
+
+打开网站
+登录
+
+-- 第 2 步 -- 发布一个作业，包含3道选择题，把这个作业布置给一个学生 
+
+
+** 检查点 **  作业发布是否成功 ---->  通过
+
+
+-- 第 3 步 -- 以学生账号登录系统，发现有发布作业的通知，点击通知里面的作业，完成该作业 
+
+打开网站
+登录
+
+-- 第 4 步 -- 再次以老师账号登录系统，进入作业任务页面 
+
+打开网站
+登录
+
+** 检查点 **  学生成绩检查 ---->  通过
+
+  PASS 
+
+[ case teardown ] 老师发布作业1 - tc005101
+
+* 老师发布作业2 - tc005102  -  2025-03-05 15:10:52
+
+[ case setup ] 老师发布作业2 - tc005102
+case setup fail | name 'stOne_id' is not defined 
+Traceback:
+    ~~~~~~~~~^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\cases\一年级1班无老师\一个数学老师无学生\有学生\老师测试.py", line 82, in setup
+    GSTORE['stOne_id'] = stOne_id
+                         ^^^^^^^^
+NameError: name 'stOne_id' is not defined. Did you mean: 'start_id'?
+
+
+* 老师发布作业3 - tc005103  -  2025-03-05 15:10:52
+
+[ case setup ] 老师发布作业3 - tc005103
+case setup fail | 'id' 
+Traceback:
+    ~~~~~~~~~^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\cases\一年级1班无老师\一个数学老师无学生\有学生\老师测试.py", line 134, in setup
+    tchOne_id = retAdd['id']
+                ~~~~~~^^^^^^
+KeyError: 'id'
+
+
+* 老师发布作业4 - tc005104  -  2025-03-05 15:10:52
+
+[ case setup ] 老师发布作业4 - tc005104
+case setup fail | 'id' 
+Traceback:
+    ~~~~~~~~~^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\cases\一年级1班无老师\一个数学老师无学生\有学生\老师测试.py", line 134, in setup
+    tchOne_id = retAdd['id']
+                ~~~~~~^^^^^^
+KeyError: 'id'
+
+
+[ suite teardown ] cases\一年级1班无老师\一个数学老师无学生\有学生\
+
+[ suite teardown ] cases\一年级1班无老师\一个数学老师无学生\
+
+
+>>> cases\一年级1班无老师\一年级2班无老师无学生\
+
+[ suite setup ] cases\一年级1班无老师\一年级2班无老师无学生\
+
+
+>>> cases\一年级1班无老师\一年级2班无老师无学生\班级修改.py
+
+* 修改班级1 - tc000051  -  2025-03-05 15:10:52
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 修改一个班级，使班级名为一个不重名的新的名字 
+
+
+** 检查点 **  添加结果检查 ---->  通过
+
+
+-- 第 2 步 -- 列出班级API 
+
+{'gradeid': 1, 'retlist': [{'name': '白月黑羽1班', 'grade__name': '七年级', 'invitecode': '203864947888', 'studentlimit': 50, 'studentnumber': 0, 'id': 20386, 'teacherlist': [{'teacher__realname': '李一黑', 'subject_id': 1, 'subject__name': '初中数学', 'teacher__user_id': 8005}]}, {'name': '白月黑羽3班', 'grade__name': '七年级', 'invitecode': '203894480189', 'studentlimit': 55, 'studentnumber': 0, 'id': 20389, 'teacherlist': []}], 'retcode': 0}
+
+** 检查点 **  列出结果检查 ---->  !! 不通过!!
+
+  FAIL    
+Traceback:
+    ~~~~~~~~~~~~~~^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\cases\一年级1班无老师\一年级2班无老师无学生\班级修改.py", line 49, in teststeps
+    CHECK_POINT('列出结果检查',
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+                retList == expected)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\.venv\Lib\site-packages\hytest\common.py", line 76, in CHECK_POINT
+    raise AssertionError()
+AssertionError
+
+
+[ case teardown ] 修改班级1 - tc000051
+
+* 修改班级2 - tc000052  -  2025-03-05 15:10:52
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 修改一个班级，使班级名为一个重名的新的名字 
+
+
+** 检查点 **  添加结果检查 ---->  !! 不通过!!
+
+  FAIL    
+Traceback:
+    ~~~~~~~~~~~~~~^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\cases\一年级1班无老师\一年级2班无老师无学生\班级修改.py", line 67, in teststeps
+    CHECK_POINT('添加结果检查',
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+                retAlter['retcode'] == 1 and retAlter['reason'] == "duplicated class name")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\.venv\Lib\site-packages\hytest\common.py", line 76, in CHECK_POINT
+    raise AssertionError()
+AssertionError
+
+
+* 删除班级2 - tc000082  -  2025-03-05 15:10:52
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 删除一个班级，使url中的ID为一个存在的班级ID号 
+
+{'retcode': 0}
+
+** 检查点 **  添加结果检查 ---->  通过
+
+
+-- 第 2 步 -- 列出班级API 
+
+
+** 检查点 **  列出结果检查 ---->  !! 不通过!!
+
+  FAIL    
+Traceback:
+    ~~~~~~~~~~~~~~^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\cases\一年级1班无老师\一年级2班无老师无学生\班级修改.py", line 133, in teststeps
+    CHECK_POINT('列出结果检查',
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+                retList == expected)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\.venv\Lib\site-packages\hytest\common.py", line 76, in CHECK_POINT
+    raise AssertionError()
+AssertionError
+
+
+[ case teardown ] 删除班级2 - tc000082
+
+
+>>> cases\一年级1班无老师\一年级2班无老师无学生\两个班级一个数学老师\
+
+[ suite setup ] cases\一年级1班无老师\一年级2班无老师无学生\两个班级一个数学老师\
+suite setup fail | 'id' 
+Traceback:
+    ~~~~~~~~~~~^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\cases\一年级1班无老师\一年级2班无老师无学生\两个班级一个数学老师\__st__.py", line 8, in suite_setup
+    tchOne_id = retAdd['id']
+                ~~~~~~^^^^^^
+KeyError: 'id'
+
+
+[ suite teardown ] cases\一年级1班无老师\一年级2班无老师无学生\
+
+
+>>> cases\一年级1班无老师\无老师有学生\
+
+[ suite setup ] cases\一年级1班无老师\无老师有学生\
+
+
+>>> cases\一年级1班无老师\无老师有学生\老师登录.py
+
+[ suite setup ] cases\一年级1班无老师\无老师有学生\老师登录.py
+打开网站
+
+* 老师登录2 - tc005002  -  2025-03-05 15:11:02
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 创建一个老师，教授学科为初中数学（ID为1） 
+
+
+** 检查点 **  添加结果检查 ---->  !! 不通过!!
+
+  FAIL    
+Traceback:
+    ~~~~~~~~~~~~~~^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\cases\一年级1班无老师\无老师有学生\老师登录.py", line 17, in teststeps
+    CHECK_POINT('添加结果检查',
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+                retAdd['retcode'] == 0)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\.venv\Lib\site-packages\hytest\common.py", line 76, in CHECK_POINT
+    raise AssertionError()
+AssertionError
+
+
+[ case teardown ] 老师登录2 - tc005002
+case teardown fail | 'sc_test_5002' object has no attribute 'addtchid' 
+Traceback:
+    ~~~~~~~~~~~~^^
+  File "D:\Program Files\Python313\Practice\PythonProject2\cases\一年级1班无老师\无老师有学生\老师登录.py", line 39, in teardown
+    tchm.delete_teacher(self.addtchid)
+                        ^^^^^^^^^^^^^
+AttributeError: 'sc_test_5002' object has no attribute 'addtchid'
+
+
+[ suite teardown ] cases\一年级1班无老师\无老师有学生\
+
+[ suite teardown ] cases\一年级1班无老师\
+
+
+  ========= 测试结束 : 20250305_151104 =========
+
+
+  耗时    : 66.397 秒
+
+
+  预备执行用例数量 : 25
+
+  实际执行用例数量 : 19
+
+  通过 : 11
+
+  失败 : 4
+
+  异常 : 1
+
+  套件初始化失败 : 1
+
+  套件清除  失败 : 0
+
+  用例初始化失败 : 3
+
+  用例清除  失败 : 1
