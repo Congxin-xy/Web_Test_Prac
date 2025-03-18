@@ -1,0 +1,183 @@
+
+
+===   [ 收集测试用例 ]  === 
+
+
+== cases\__st__.py 
+
+
+== cases\班级管理.py 
+
+
+** no cases in this file , skip it.
+
+== cases\一年级1班无老师\__st__.py 
+
+
+== cases\一年级1班无老师\学生测试.py 
+
+
+** no cases in this file , skip it.
+
+== cases\一年级1班无老师\班级测试.py 
+
+
+** no cases in this file , skip it.
+
+== cases\一年级1班无老师\老师web登录测试.py 
+
+
+** no cases in this file , skip it.
+
+== cases\一年级1班无老师\老师测试.py 
+
+
+** no cases in this file , skip it.
+
+== cases\一年级1班无老师\一个数学老师无学生\__st__.py 
+
+
+== cases\一年级1班无老师\一个数学老师无学生\学生测试.py 
+
+
+** no cases in this file , skip it.
+
+== cases\一年级1班无老师\一个数学老师无学生\老师web忘记密码测试.py 
+
+
+** no cases in this file , skip it.
+
+== cases\一年级1班无老师\一个数学老师无学生\老师主页测试.py 
+
+
+== cases\一年级1班无老师\一个数学老师无学生\老师测试.py 
+
+
+** no cases in this file , skip it.
+
+== cases\一年级1班无老师\一个数学老师无学生\有学生\__st__.py 
+
+
+== cases\一年级1班无老师\一个数学老师无学生\有学生\学生测试.py 
+
+
+** no cases in this file , skip it.
+
+== cases\一年级1班无老师\一年级2班无老师无学生\__st__.py 
+
+
+== cases\一年级1班无老师\一年级2班无老师无学生\班级修改.py 
+
+
+** no cases in this file , skip it.
+
+== cases\一年级1班无老师\一年级2班无老师无学生\两个班级一个数学老师\__st__.py 
+
+
+== cases\一年级1班无老师\一年级2班无老师无学生\两个班级一个数学老师\老师测试2.py 
+
+
+** no cases in this file , skip it.
+
+== cases\一年级1班无老师\一年级2班无老师无学生\两个班级一个数学老师\两个班级两位老师\__st__.py 
+
+
+== cases\一年级1班无老师\一年级2班无老师无学生\两个班级一个数学老师\两个班级两位老师\老师测试.py 
+
+
+** no cases in this file , skip it.
+
+== cases\一年级1班无老师\无老师有学生\__st__.py 
+
+
+== cases\一年级1班无老师\无老师有学生\学生测试.py 
+
+
+** no cases in this file , skip it.
+
+== cases\一年级1班无老师\无老师有学生\老师发布测试.py 
+
+
+** no cases in this file , skip it.
+
+== cases\一年级1班无老师\无老师有学生\老师登录.py 
+
+
+** no cases in this file , skip it.
+
+== cases\一年级1班无老师\无老师有学生\无老师有两个学生\__st__.py 
+
+
+== cases\一年级1班无老师\无老师有学生\无老师有两个学生\学生测试.py 
+
+
+** no cases in this file , skip it.
+
+
+===   [ 执行测试用例 ]  === 
+
+预备执行用例数量 : 1
+
+
+
+  ========= 测试开始 : 20250318_094219 =========
+
+
+
+>>> cases\
+
+[ suite setup ] cases\
+
+
+>>> cases\一年级1班无老师\
+
+[ suite setup ] cases\一年级1班无老师\
+
+
+>>> cases\一年级1班无老师\一个数学老师无学生\
+
+[ suite setup ] cases\一年级1班无老师\一个数学老师无学生\
+
+
+>>> cases\一年级1班无老师\一个数学老师无学生\老师主页测试.py
+
+[ suite setup ] cases\一年级1班无老师\一个数学老师无学生\老师主页测试.py
+打开网站
+登录
+
+* 菜单栏4 - tc005004  -  2025-03-18 09:42:21
+
+  [ case execution steps ]
+
+** 检查点 **  题目栏检查 ---->  通过
+
+  PASS 
+
+[ suite teardown ] cases\一年级1班无老师\一个数学老师无学生\
+
+[ suite teardown ] cases\一年级1班无老师\
+
+
+  ========= 测试结束 : 20250318_094222 =========
+
+
+  耗时    : 2.707 秒
+
+
+  预备执行用例数量 : 1
+
+  实际执行用例数量 : 1
+
+  通过 : 1
+
+  失败 : 0
+
+  异常 : 0
+
+  套件初始化失败 : 0
+
+  套件清除  失败 : 0
+
+  用例初始化失败 : 0
+
+  用例清除  失败 : 0
